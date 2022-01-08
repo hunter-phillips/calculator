@@ -1,0 +1,107 @@
+html {
+    font-size: 62.5%;
+}
+
+html * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    box-sizing: content-box;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+#display, #buttons {
+    width: 400px;
+    display: flex;
+}
+
+#display {
+    height: 150px;
+}
+
+#buttons {
+    height: 500px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+button {
+    width: 85px;
+    height: 85px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+
+button.zero {
+    width: 200px;
+    border-radius: 50px;
+}
+
+/*
+ Styling
+*/
+
+.display-container {
+    font-size: 11rem;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#display {
+    display: flex;
+    justify-content: flex-end;
+}
+
+span#operand2 {
+    padding-right: 10px;
+}
+
+button.other {
+    background-color: lightgray;
+}
+
+button.operator {
+    background-color: mediumpurple;
+    color: white;
+}
+
+button.digit {
+    background-color: gray;
+    color: white;
+}
+
+button.other:active {
+    background-color: darkgray;
+}
+
+button.digit:active {
+    background-color: rgb(93, 91, 91);
+}
+
+button.operator:active {
+    background-color: rgb(129, 98, 190);
+}
+
+button {
+    animation: ease-in-out;
+}
