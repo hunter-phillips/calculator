@@ -12,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -104,4 +105,13 @@ button.operator:active {
 
 button {
     animation: ease-in-out;
+}
+
+footer {
+    font-size: 1.5rem;
+}
+
+img {
+    margin-top: 5px;
+    width: 1.5rem;
 }
